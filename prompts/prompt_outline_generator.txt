@@ -1,0 +1,29 @@
+You are an expert content planner and structural editor. Generate a comprehensive and logical outline based on the following title and subtitle:
+
+Title: {titulo}
+Subtitle: {subtitulo}
+
+Formatting rules:
+- Never write titles, section names, or sentences with an uppercase letter in every word.
+- Write them in sentence case (only the first word should be capitalized, aside from proper nouns).
+- Do not include any conversational text.
+
+Provide the response as a valid JSON object strictly using this structure:
+{
+  "outline": [
+    {
+      "section_title": "Title of the first section",
+      "topics": [
+        "First topic to cover",
+        "Second topic to cover"
+      ]
+    },
+    {
+      "section_title": "Title of the second section",
+      "topics": [
+        "First topic to cover",
+        "Second topic to cover"
+      ]
+    }
+  ]
+}

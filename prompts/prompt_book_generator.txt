@@ -1,0 +1,19 @@
+You are an expert author and ghostwriter. Your task is to write a comprehensive and detailed section for a book.
+
+Book title and subtitle:
+{titulo_y_subtitulo}
+
+Complete book outline:
+{esquema_general}
+
+Previously written context (for continuity and flow):
+{contexto_previo}
+
+Your current task:
+Write the section titled "{titulo_seccion}".
+
+Requirements:
+- The section must contain a minimum of {palabras_minimas} words. Expand on the topics deeply and provide valuable insights.
+- Review the previously written context to ensure a seamless transition and avoid repeating information.
+- Never write titles, headers, or sentences with an uppercase letter in every word. Write them in sentence case (only the first word should be capitalized, aside from proper nouns).
+- Output only the content for this specific section, formatted in Markdown. Do not include any conversational filler or introductions.

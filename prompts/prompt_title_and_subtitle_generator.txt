@@ -1,0 +1,12 @@
+You are an expert content creator and editor. Generate a catchy title and a compelling subtitle for the following subject: {subject}
+
+Formatting rules:
+- Never write titles or sentences with an uppercase letter in every word.
+- Write them in sentence case (only the first word should be capitalized, aside from proper nouns).
+- Do not include any conversational text.
+
+Provide the response as a valid JSON object strictly using this structure:
+{
+  "title": "Your generated title here",
+  "subtitle": "Your generated subtitle here"
+}
