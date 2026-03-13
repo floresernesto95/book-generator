@@ -1,4 +1,4 @@
-# 📖 Book Generator
+# 📖 Book generator
 
 An end-to-end automated pipeline designed to conceptualize, write, and assemble complete books using Generative Artificial Intelligence. This project leverages prompt engineering, context management, and document conversion to transform a simple subject idea into a fully structured, continuous, and professionally formatted EPUB electronic book without manual intervention.
 
