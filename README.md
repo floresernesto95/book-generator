@@ -24,18 +24,21 @@ This project demonstrates strong competencies in backend orchestration and AI in
 
 The system operates through a sequential, four-stage pipeline:
 
-1. **Conceptualization (`title_and_subtitle_generator.py`):** * Takes a base subject and queries the Gemini API to output a catchy title and subtitle in a strictly formatted JSON file.
-2. **Structuring (`outline_generator.py`):** * Uses the generated title to create a comprehensive book outline, breaking the content into primary sections and specific topics, saved as JSON.
-3. **Drafting (`book_generator.py`):** * Iterates through the structured outline.
+1. **Conceptualization (`title_and_subtitle_generator.py`):**
+* Takes a base subject and queries the Gemini API to output a catchy title and subtitle in a strictly formatted JSON file.
+
+2. **Structuring (`outline_generator.py`):**
+* Uses the generated title to create a comprehensive book outline, breaking the content into primary sections and specific topics, saved as JSON.
+
+3. **Drafting (`book_generator.py`):**
+* Iterates through the structured outline.
 * Feeds the AI the current section requirements alongside the accumulated text of all previous sections.
 * Validates word count targets and retries if necessary.
 * Saves each section as sequentially numbered Markdown files.
 
-
-4. **Assembly (`book_assembler.py`):** * Reads the generated Markdown chapters and metadata.
+4. **Assembly (`book_assembler.py`):**
+* Reads the generated Markdown chapters and metadata.
 * Orchestrates a Pandoc subprocess command to compile the files into a final `final_book.epub`.
-
-
 
 ## 📋 Prerequisites
 
@@ -46,13 +49,10 @@ To run this project locally, you need an Ubuntu or similar Linux environment wit
 3. Environment variables configured:
 * `GEMINI_API_KEY`: Your Google AI Studio API key
 
-
-
 ### Dependency installation
 
 ```bash
 pip install google-genai
-
 ```
 
 ## 📂 Project structure
@@ -69,7 +69,6 @@ pip install google-genai
 │   ├── outline_generator.py    # Creates the JSON outline
 │   └── title_and_subtitle_generator.py
 └── README.md                   # Project documentation
-
 ```
 
 ## 💡 Overcome challenges and learnings
